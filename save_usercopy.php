@@ -20,19 +20,6 @@
 		
 		exit( "Пароли не совпадают! Повторите попытку.");
 	}
-	
-	//если логин и пароль введены,то обрабатываем их, чтобы теги и скрипты не работали, мало ли что люди могут ввести
-	/*$login = stripslashes($login);
-	$login = htmlspecialchars($login);
-
-	$password = stripslashes($password);
-	$password = htmlspecialchars($password);
-
-	//удаляем лишние пробелы
-	$login = trim($login);
-	$password = trim($password);*/
-
-
 	// подключаемся к базе
 	include ("bd.php");// файл bd.php должен быть в той же папке, что и все остальные, если это не так, то просто измените путь 
 
